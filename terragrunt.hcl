@@ -29,7 +29,7 @@ provider "aws" {
 EOF
 }
 
-
+# Global Variables across region and environment
 inputs = {
   region = local.region
   env = local.env

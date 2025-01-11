@@ -1,7 +1,7 @@
 module "s3_wq_static_server_new" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "4.3.0"
-  bucket  = "tsuweiquan-backend-server-file-storage-new-${var.env}-${var.region-suffix}"
+  bucket  = "my-backend-server-file-storage-${var.env}-${var.region-suffix}"
   acl     = "private"
 
   control_object_ownership = true
