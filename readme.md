@@ -21,6 +21,12 @@ This terragrunt repo template focus on these few items
 
 - s3://207756197509-terragrunt-state/terraform-root/ap-southeast-1/dev/s3_frontend_module/terraform.tfstate
 
+### Statefile are stored in S3 with such prefix /REGION/ENVIRONMENT/MODULE_NAME
+
+![](./readme-images/image.png)
+![](./readme-images/image-1.png)
+![](./readme-images/image-2.png)
+![](./readme-images/image-3.png)
 Can see that states are in S3 bucket, in REGION folder and in ENVIRONMENT folder.
 
 # How to run
@@ -47,3 +53,7 @@ terragrunt init
 terragrunt plan
 terragrunt apply
 ```
+
+# Resource created
+
+![](./readme-images/s3-buckets-created.png)
