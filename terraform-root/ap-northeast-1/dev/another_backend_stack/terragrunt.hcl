@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "../../../modules/s3_frontend_module"
+  source = "../../../stacks/another_backend_stack"
 }
 
 inputs = {
